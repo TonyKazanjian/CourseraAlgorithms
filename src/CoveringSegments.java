@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by tonykazanjian on 4/9/17.
@@ -36,7 +33,7 @@ public class CoveringSegments {
             }
             // If they don't insersect each other
             else if (segments[i].end < segments[i+1].start) {
-                pointsToReturn.add(segments[i+1].start);
+                pointsToReturn.add(segments[i + 1].end);
             }
         }
 
